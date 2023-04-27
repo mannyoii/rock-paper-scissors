@@ -11,3 +11,22 @@ function getComputerChoice() {
   // console.log(randomChoice)
   return signs[randomChoice];
 }
+
+function playRound(playerSelection, computerSelection) {
+  const winMessage = `You Won! ${playerSelection} beats ${computerSelection}`;
+  const loseMessage = `You Lose! ${computerSelection} beats ${playerSelection}`;
+  const tieMessage = "It's a Tie!";
+
+  if (playerSelection === signs[0] && computerSelection === signs[2]) {
+    return winMessage;
+  } else if (playerSelection === signs[2] && computerSelection === signs[1]) {
+    return winMessage;
+  } else if (playerSelection === signs[1] && computerSelection === signs[0]) {
+    return winMessage;
+  } else if (playerSelection === computerSelection) {
+    return tieMessage;
+  } else return loseMessage;
+}
+
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
