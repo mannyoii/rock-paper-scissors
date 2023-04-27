@@ -52,10 +52,16 @@ function game() {
     console.log(`player: ${playerSelection}`, `computer: ${computerSelection}`);
   }
 
-  let winner =
-    userScore > computerScore
-      ? "Player has won the game!"
-      : "Computer has won the game!";
+  if (userScore > computerScore) {
+    return "Player has won the game";
+  } else if (userScore === computerScore) {
+    return "It's a tie";
+  } else return "Computer has won the game!";
 
-  return winner;
+  // let winner =
+  //   userScore > computerScore
+  //     ? "Player has won the game!"
+  //     : "Computer has won the game!";
+
+  // return winner;
 }
