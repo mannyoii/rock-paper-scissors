@@ -3,9 +3,6 @@
 const signs = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
-  // for (let i = 0; i < choice.length; i++) {
-
-  // }
   const randomChoice = Math.floor(Math.random() * 3 - 0) + 0;
   console.log(signs[randomChoice]);
   // console.log(randomChoice)
@@ -57,11 +54,4 @@ function game() {
   } else if (userScore === computerScore) {
     return "It's a tie";
   } else return "Computer has won the game!";
-
-  // let winner =
-  //   userScore > computerScore
-  //     ? "Player has won the game!"
-  //     : "Computer has won the game!";
-
-  // return winner;
 }
