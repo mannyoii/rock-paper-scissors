@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+button {
+  /* border: thick double #32a1ce; */
+  padding: 10px 20px;
+  margin: 20px 10px;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  border: thick double #32a1ce;
+  width: 20%;
+  margin: 50px auto 0;
+  padding: 10%;
+}
+
+.results {
+  display: block;
+}
+
+.player-score,
+.computer-score {
+  display: block;
+}
